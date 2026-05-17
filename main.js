@@ -58,6 +58,7 @@ async function submitForm(form, successEl) {
   const btn = form.querySelector('button[type="submit"]');
   const originalText = btn.textContent;
 
+  btn.disabled = true;
   btn.classList.add('btn--loading');
   btn.textContent = 'Sending...';
 
@@ -70,16 +71,19 @@ async function submitForm(form, successEl) {
       headers: { Accept: 'application/json' },
     });
 
-    if (res.ok) {
+    const json = await res.json();
+
+    if (json.success) {
       if (typeof window.fbq === 'function') {
         window.fbq('track', 'Lead');
       }
       form.hidden = true;
       successEl.hidden = false;
     } else {
-      throw new Error('Server error');
+      throw new Error(json.message || 'Server error');
     }
   } catch {
+    btn.disabled = false;
     btn.classList.remove('btn--loading');
     btn.textContent = originalText;
     alert('Something went wrong. Please try again.');
