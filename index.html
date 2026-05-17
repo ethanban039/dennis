@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free 3D Kitchen Design + Fixed Quote | Nottingham Kitchen Fitters</title>
+    <meta name="description" content="Get a free 3D kitchen design and fixed price quote from trusted local fitters in Nottingham. No obligation, no pressure. See your new kitchen before you commit." />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Free 3D Kitchen Design + Fixed Quote | Nottingham" />
+    <meta property="og:description" content="See exactly what your new kitchen will look like before you commit. Free 3D design + fixed quote from trusted Nottingham fitters." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=1200" />
+
+    <!-- Meta Pixel Placeholder -->
+    <script>
+      // META PIXEL — replace YOUR_PIXEL_ID with your actual Pixel ID
+      // !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      // n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      // if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      // n.queue=[];t=b.createElement(e);t.async=!0;
+      // t.src=v;s=b.getElementsByTagName(e)[0];
+      // s.parentNode.insertBefore(t,s)}(window, document,'script',
+      // 'https://connect.facebook.net/en_US/fbevents.js');
+      // fbq('init', 'YOUR_PIXEL_ID');
+      // fbq('track', 'PageView');
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- ═══════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════ -->
+    <section class="hero" id="hero">
+      <div class="hero__bg-overlay"></div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Nottingham's Trusted Kitchen Specialists</p>
+          <h1 class="hero__headline">Free 3D Kitchen Design&nbsp;+&nbsp;Fixed Quote for Nottingham Homeowners</h1>
+          <p class="hero__subhead">See exactly what your new kitchen will look like before you commit. No obligation, no pressure. Trusted local fitters with over a decade of experience.</p>
+        </div>
+        <div class="hero__form-wrap">
+          <div class="form-card">
+            <p class="form-card__label">Get your free design — takes 30 seconds</p>
+            <form class="lead-form" id="hero-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+              <div class="form-field">
+                <label for="hero-name">Full Name</label>
+                <input type="text" id="hero-name" name="name" placeholder="e.g. James Thompson" autocomplete="name" required />
+              </div>
+              <div class="form-field">
+                <label for="hero-postcode">Postcode</label>
+                <input type="text" id="hero-postcode" name="postcode" placeholder="e.g. NG1 1AA" autocomplete="postal-code" required />
+              </div>
+              <div class="form-field">
+                <label for="hero-phone">Phone Number</label>
+                <input type="tel" id="hero-phone" name="phone" placeholder="e.g. 07700 900000" autocomplete="tel" required />
+              </div>
+              <div class="form-field">
+                <label for="hero-budget">Budget Range</label>
+                <select id="hero-budget" name="budget" required>
+                  <option value="" disabled selected>Select your budget</option>
+                  <option value="5000-10000">£5,000 – £10,000</option>
+                  <option value="10000-20000">£10,000 – £20,000</option>
+                  <option value="20000+">£20,000+</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="hero-timeline">Timeline</label>
+                <select id="hero-timeline" name="timeline" required>
+                  <option value="" disabled selected>When are you looking to start?</option>
+                  <option value="1-3months">Within 1–3 months</option>
+                  <option value="3-6months">Within 3–6 months</option>
+                  <option value="researching">Just researching</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn--cta btn--full">Get My Free Design</button>
+              <p class="form-trust">&#10003; Free &nbsp;&nbsp; &#10003; No obligation &nbsp;&nbsp; &#10003; Local Nottingham fitters</p>
+            </form>
+            <div class="form-success" id="hero-success" hidden>
+              <div class="form-success__icon">&#10003;</div>
+              <h3>Thank you!</h3>
+              <p>We'll be in touch within 24 hours with your free 3D design.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         HOW IT WORKS
+    ═══════════════════════════════════════ -->
+    <section class="how" id="how">
+      <div class="container">
+        <p class="section-eyebrow">Simple process</p>
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-subtitle">Three easy steps from enquiry to your dream kitchen.</p>
+        <div class="steps">
+          <div class="step">
+            <div class="step__num">01</div>
+            <div class="step__icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <rect x="4" y="6" width="24" height="20" rx="3" stroke="currentColor" stroke-width="2"/>
+                <path d="M10 12h12M10 16h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="22" cy="22" r="5" fill="var(--accent)" stroke="none"/>
+                <path d="M20 22l1.5 1.5L24 20" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Fill in the form</h3>
+            <p>Takes just 30 seconds. Tell us about your budget and timeline — that's all we need to get started.</p>
+          </div>
+          <div class="step__connector" aria-hidden="true"></div>
+          <div class="step">
+            <div class="step__num">02</div>
+            <div class="step__icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <rect x="3" y="8" width="26" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M3 13h26" stroke="currentColor" stroke-width="2"/>
+                <rect x="7" y="17" width="6" height="5" rx="1" fill="var(--accent)"/>
+                <rect x="15" y="17" width="10" height="2" rx="1" fill="currentColor" opacity=".3"/>
+                <rect x="15" y="21" width="6" height="1.5" rx=".75" fill="currentColor" opacity=".3"/>
+              </svg>
+            </div>
+            <h3>Receive your free 3D design</h3>
+            <p>Within 48 hours you'll have a photorealistic 3D render of your new kitchen and a fixed, transparent quote.</p>
+          </div>
+          <div class="step__connector" aria-hidden="true"></div>
+          <div class="step">
+            <div class="step__num">03</div>
+            <div class="step__icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2"/>
+                <path d="M11 16l3.5 3.5L21 11" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Decide at your own pace</h3>
+            <p>Zero pressure. Love it — we'll get started. Want changes? No problem. Walk away? That's fine too.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         BEFORE / AFTER GALLERY
+    ═══════════════════════════════════════ -->
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <p class="section-eyebrow">Real transformations</p>
+        <h2 class="section-title">Before &amp; After</h2>
+        <p class="section-subtitle">Every kitchen transformed by our Nottingham team.</p>
+        <div class="gallery__grid">
+          <div class="gallery__item">
+            <div class="gallery__pair">
+              <div class="gallery__img-wrap gallery__img-wrap--before">
+                <img src="https://images.pexels.com/photos/2089698/pexels-photo-2089698.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Kitchen before renovation" loading="lazy" width="600" height="400" />
+                <span class="gallery__badge gallery__badge--before">Before</span>
+              </div>
+              <div class="gallery__img-wrap gallery__img-wrap--after">
+                <img src="https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Kitchen after renovation" loading="lazy" width="600" height="400" />
+                <span class="gallery__badge gallery__badge--after">After</span>
+              </div>
+            </div>
+            <p class="gallery__caption">Wollaton, Nottingham — Complete kitchen replacement</p>
+          </div>
+          <div class="gallery__item">
+            <div class="gallery__pair">
+              <div class="gallery__img-wrap gallery__img-wrap--before">
+                <img src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Kitchen before renovation" loading="lazy" width="600" height="400" />
+                <span class="gallery__badge gallery__badge--before">Before</span>
+              </div>
+              <div class="gallery__img-wrap gallery__img-wrap--after">
+                <img src="https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Kitchen after renovation" loading="lazy" width="600" height="400" />
+                <span class="gallery__badge gallery__badge--after">After</span>
+              </div>
+            </div>
+            <p class="gallery__caption">West Bridgford — Open-plan kitchen extension</p>
+          </div>
+          <div class="gallery__item">
+            <div class="gallery__pair">
+              <div class="gallery__img-wrap gallery__img-wrap--before">
+                <img src="https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Kitchen before renovation" loading="lazy" width="600" height="400" />
+                <span class="gallery__badge gallery__badge--before">Before</span>
+              </div>
+              <div class="gallery__img-wrap gallery__img-wrap--after">
+                <img src="https://images.pexels.com/photos/3735149/pexels-photo-3735149.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Kitchen after renovation" loading="lazy" width="600" height="400" />
+                <span class="gallery__badge gallery__badge--after">After</span>
+              </div>
+            </div>
+            <p class="gallery__caption">Arnold, Nottingham — Budget kitchen makeover</p>
+          </div>
+          <div class="gallery__item">
+            <div class="gallery__pair">
+              <div class="gallery__img-wrap gallery__img-wrap--before">
+                <img src="https://images.pexels.com/photos/2062431/pexels-photo-2062431.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Kitchen before renovation" loading="lazy" width="600" height="400" />
+                <span class="gallery__badge gallery__badge--before">Before</span>
+              </div>
+              <div class="gallery__img-wrap gallery__img-wrap--after">
+                <img src="https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Kitchen after renovation" loading="lazy" width="600" height="400" />
+                <span class="gallery__badge gallery__badge--after">After</span>
+              </div>
+            </div>
+            <p class="gallery__caption">Beeston — Premium handleless kitchen</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         WHY CHOOSE US
+    ═══════════════════════════════════════ -->
+    <section class="benefits" id="benefits">
+      <div class="container">
+        <p class="section-eyebrow">Why us</p>
+        <h2 class="section-title">Built on Trust &amp; Transparency</h2>
+        <p class="section-subtitle">We do things differently. No salesmen, no surprises.</p>
+        <div class="benefits__grid">
+          <div class="benefit-card">
+            <div class="benefit-card__icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                <path d="M14 3C8 3 3 8 3 14s5 11 11 11 11-5 11-11S20 3 14 3z" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M9 14l3.5 3.5L19 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Local Nottingham Fitters</h3>
+            <p>We're based right here in Nottinghamshire. No subcontractors shipped in from elsewhere — our team lives and works in the same community as you.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-card__icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                <rect x="4" y="6" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M4 11h20" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M9 16h4M9 19h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                <circle cx="20" cy="19" r="2.5" fill="var(--accent)"/>
+                <path d="M19 19l.8.8L21.5 18" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Fixed-Price Guarantee</h3>
+            <p>The price we quote is the price you pay. No hidden extras, no surprise additions on completion day. Your quote is locked in writing.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-card__icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                <rect x="3" y="4" width="22" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M8 14l4-4 4 4 4-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 24h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M14 20v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Free 3D Visualisation</h3>
+            <p>See your kitchen in photorealistic 3D before a single unit is fitted. Walk through your space, change colours, adjust layouts — all before you commit.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-card__icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                <path d="M14 4l2.5 5 5.5.8-4 3.9.9 5.5L14 16.5 9.1 19.2l.9-5.5L6 9.8l5.5-.8L14 4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                <path d="M7 22h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>10-Year Workmanship Warranty</h3>
+            <p>Every kitchen we fit comes with a full 10-year workmanship warranty. Quality craftsmanship you can rely on, backed by a guarantee that means something.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         TESTIMONIALS
+    ═══════════════════════════════════════ -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <p class="section-eyebrow">Happy customers</p>
+        <h2 class="section-title">What Nottingham Homeowners Say</h2>
+        <div class="testimonials__grid">
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote>
+              <p>"We were sceptical at first — we'd had bad experiences with other fitters. But the 3D design completely won us over. We could see exactly what we were getting, and the fixed quote meant no nasty surprises. Absolutely love our new kitchen."</p>
+            </blockquote>
+            <footer>
+              <div class="testimonial-card__avatar" aria-hidden="true">S</div>
+              <div>
+                <strong>Sarah M.</strong>
+                <span>Mapperley, Nottingham</span>
+              </div>
+            </footer>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote>
+              <p>"From the first call to the final fit took just six weeks. The team were professional, tidy, and on time every day. I've already recommended them to three neighbours. The fixed price was a game-changer — we actually knew what we were spending."</p>
+            </blockquote>
+            <footer>
+              <div class="testimonial-card__avatar" aria-hidden="true">D</div>
+              <div>
+                <strong>David &amp; Claire H.</strong>
+                <span>West Bridgford</span>
+              </div>
+            </footer>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote>
+              <p>"The 3D design service is genuinely impressive. I must have changed the layout four times and they were patient every step of the way. The end result is even better than what I imagined. Local, honest, and brilliant at what they do."</p>
+            </blockquote>
+            <footer>
+              <div class="testimonial-card__avatar" aria-hidden="true">R</div>
+              <div>
+                <strong>Rachel T.</strong>
+                <span>Arnold, Nottingham</span>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         FAQ
+    ═══════════════════════════════════════ -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <p class="section-eyebrow">Common questions</p>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq__list">
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false">
+              <span>How long does the whole process take?</span>
+              <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="faq-item__answer">
+              <p>From your initial enquiry to a fitted kitchen is typically 4–8 weeks depending on your chosen style, materials, and our current schedule. We'll give you a clear timeline as part of your free design consultation. The design phase alone takes just 48 hours once we have your details.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false">
+              <span>How much does a new kitchen actually cost?</span>
+              <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="faq-item__answer">
+              <p>Our projects typically range from £5,000 for a straightforward refresh to £25,000+ for a full open-plan transformation including structural work. The best way to get an accurate figure is to fill in the form — we'll provide a fixed, itemised quote as part of your free 3D design. No vague estimates, ever.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false">
+              <span>Do I have to commit to anything to get the design?</span>
+              <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="faq-item__answer">
+              <p>Absolutely not. The 3D design and fixed quote are completely free with zero obligation. We want you to love your design before you spend a penny. If you decide it's not for you after seeing the design, that's entirely fine — no pressure, no follow-up sales calls.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false">
+              <span>Are you really local to Nottingham?</span>
+              <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="faq-item__answer">
+              <p>Yes — genuinely local. Our team is based in Nottinghamshire and we work exclusively within the Nottingham area. You won't get a salesman from a national chain; you'll deal directly with the people who will actually fit your kitchen. We cover Nottingham city centre, West Bridgford, Arnold, Beeston, Wollaton, Gedling, and surrounding areas.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false">
+              <span>What exactly is included in the free 3D design?</span>
+              <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="faq-item__answer">
+              <p>Your free design package includes: a full photorealistic 3D render of your new kitchen from multiple angles, a detailed floor plan, your choice of door styles and finishes applied to the design, an itemised fixed price quote, and a consultation call to discuss the design. There's no charge and no catch — it's how we show you we're serious.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         REPEAT FORM
+    ═══════════════════════════════════════ -->
+    <section class="cta-form" id="get-quote">
+      <div class="container">
+        <div class="cta-form__inner">
+          <div class="cta-form__content">
+            <p class="section-eyebrow section-eyebrow--light">Free design, no obligation</p>
+            <h2 class="cta-form__title">Ready to See Your New Kitchen?</h2>
+            <p class="cta-form__sub">Join hundreds of Nottingham homeowners who've seen their dream kitchen in 3D before committing a single penny.</p>
+            <ul class="cta-form__checks">
+              <li>&#10003; Free 3D design within 48 hours</li>
+              <li>&#10003; Fixed price — no hidden extras</li>
+              <li>&#10003; 10-year workmanship warranty</li>
+              <li>&#10003; Local fitters, not a national chain</li>
+            </ul>
+          </div>
+          <div class="cta-form__form-wrap">
+            <div class="form-card form-card--light">
+              <form class="lead-form" id="bottom-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+                <div class="form-field">
+                  <label for="bottom-name">Full Name</label>
+                  <input type="text" id="bottom-name" name="name" placeholder="e.g. James Thompson" autocomplete="name" required />
+                </div>
+                <div class="form-field">
+                  <label for="bottom-postcode">Postcode</label>
+                  <input type="text" id="bottom-postcode" name="postcode" placeholder="e.g. NG1 1AA" autocomplete="postal-code" required />
+                </div>
+                <div class="form-field">
+                  <label for="bottom-phone">Phone Number</label>
+                  <input type="tel" id="bottom-phone" name="phone" placeholder="e.g. 07700 900000" autocomplete="tel" required />
+                </div>
+                <div class="form-field">
+                  <label for="bottom-budget">Budget Range</label>
+                  <select id="bottom-budget" name="budget" required>
+                    <option value="" disabled selected>Select your budget</option>
+                    <option value="5000-10000">£5,000 – £10,000</option>
+                    <option value="10000-20000">£10,000 – £20,000</option>
+                    <option value="20000+">£20,000+</option>
+                  </select>
+                </div>
+                <div class="form-field">
+                  <label for="bottom-timeline">Timeline</label>
+                  <select id="bottom-timeline" name="timeline" required>
+                    <option value="" disabled selected>When are you looking to start?</option>
+                    <option value="1-3months">Within 1–3 months</option>
+                    <option value="3-6months">Within 3–6 months</option>
+                    <option value="researching">Just researching</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn--cta btn--full">Get My Free Design</button>
+                <p class="form-trust">&#10003; Free &nbsp;&nbsp; &#10003; No obligation &nbsp;&nbsp; &#10003; Local Nottingham fitters</p>
+              </form>
+              <div class="form-success" id="bottom-success" hidden>
+                <div class="form-success__icon">&#10003;</div>
+                <h3>Thank you!</h3>
+                <p>We'll be in touch within 24 hours with your free 3D design.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         FOOTER
+    ═══════════════════════════════════════ -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="footer__brand">Nottingham Kitchen Co.</p>
+        <p class="footer__copy">&copy; 2026 Nottingham Kitchen Co. All rights reserved. &nbsp;&middot;&nbsp; <a href="/privacy-policy" class="footer__link">Privacy Policy</a></p>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
