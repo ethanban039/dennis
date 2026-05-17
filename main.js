@@ -82,7 +82,7 @@ async function submitForm(form, successEl) {
   } catch {
     btn.classList.remove('btn--loading');
     btn.textContent = originalText;
-    alert('Something went wrong. Please try again or call us directly.');
+    alert('Something went wrong. Please try again.');
   }
 }
 
