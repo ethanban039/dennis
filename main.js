@@ -37,8 +37,14 @@ function validateForm(form) {
 
   fields.forEach(field => {
     field.classList.remove('invalid');
-    if (!field.value.trim()) {
+    field.removeAttribute('aria-invalid');
+
+    const emptyTextField = field.type !== 'checkbox' && !field.value.trim();
+    const uncheckedRequiredBox = field.type === 'checkbox' && !field.checked;
+
+    if (emptyTextField || uncheckedRequiredBox) {
       field.classList.add('invalid');
+      field.setAttribute('aria-invalid', 'true');
       valid = false;
     }
   });
@@ -65,6 +71,9 @@ async function submitForm(form, successEl) {
     });
 
     if (res.ok) {
+      if (typeof window.fbq === 'function') {
+        window.fbq('track', 'Lead');
+      }
       form.hidden = true;
       successEl.hidden = false;
     } else {
@@ -88,7 +97,12 @@ function initForms() {
 
     // Clear invalid on input
     form.querySelectorAll('[required]').forEach(field => {
-      field.addEventListener('input', () => field.classList.remove('invalid'));
+      const clearInvalid = () => {
+        field.classList.remove('invalid');
+        field.removeAttribute('aria-invalid');
+      };
+      field.addEventListener('input', clearInvalid);
+      field.addEventListener('change', clearInvalid);
     });
 
     form.addEventListener('submit', e => {
